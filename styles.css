@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+
+.nav{
+    display: flex;
+    overflow: auto;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    border: black solid 1px;
+    }
+    .logo_btn{
+        height: 38px;
+        width: 70px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        margin: auto 0;
+        }
+        .logo_img{
+            height: 28px;
+            width: 60px;
+            padding: 10px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: auto 0;
+        }
+    .nav_options {
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+        }
+        .home_btn,
+        .skills_btn,
+        .projects_btn,
+        .contacts_btn {
+            height: 38px;
+            width: 110px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 0 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        } 
+        .specializations_btn{
+            height: 38px;
+            width: 160px;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 0 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            }
+            .home_text,
+            .skills_text,
+            .projects_text,
+            .contacts_text,
+            .specializations_text{
+                height: 28px;
+                width: 100%;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+           
+    
+   
+.home {
+    height: 500px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    overflow: auto;
+    }
+    .profile_cont{
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        width: 800px;
+        border: 1px solid black;
+        }
+        .profile_img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height:300px;
+            width: 300px;
+            border: 1px solid black;
+            margin: auto;
+        }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        gap: 5px;
+        padding: 1rem;
+        height: 100%;
+        width: 1200px;
+        }
+        .greetings{
+            height: 30px;
+            width: 150px;
+            border: 1px solid black;
+        }
+        .role{
+            height: 40px;
+            width: 300px;
+            border: 1px solid black;
+        }
+        .my_desc{
+            height: 25px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .about_me{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 54px;
+            width: 110px;
+            border: 1px solid black;
+        }
+
+.specialization {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    border: 1px solid black;
+    justify-content: space-between;
+    overflow: auto;
+    }
+    .webdev,
+    .mobdev,
+    .uides{
+        height: 500px;
+        width: 600px;
+        min-width: 250px;
+        padding: 20px;
+        border: 1px solid black;
+        margin: auto 0;
+        }
+        .webdev_icon,
+        .mobdev_icon,
+        .uides_icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        .webdev_title,
+        .mobdev_title,
+        .uides_title{
+            height: 40px;
+            width: 300px;
+            border: 1px solid black;
+        }
+        .webdev_info,
+        .mobdev_info,
+        .uides_info{
+            height: 40px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .webdev_more,
+        .mobdev_more,
+        .uides_more{
+            height: 20px;
+            width: 110px;
+            border: 1px solid black;
+        }
+    
+
+.about {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    border: 1px solid black;
+    overflow: auto;
+    }
+    .technical_skills{
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 600px;
+        min-width: 200px;
+        border: 1px solid black;
+        margin: auto 0;
+        }
+        .technical_skills_text{
+            text-align: center;
+            height: 40px;
+            width: 300px;
+            border: 1px solid black;
+        }
+    .others{
+        height: 500px;
+        width: 1250px;
+        min-width: 300px;
+        border: 1px solid black;
+        margin: auto 0;
+        overflow: auto;
+        justify-content: space-between;
+        }
+        .others_block1,
+        .others_block2{
+            display: flex;
+            height: 250px;
+            width:  100%;
+            border: 1px solid black;
+            overflow: auto;
+            padding: 24px 0;
+            justify-content: space-between;   
+            }
+            .frontend,
+            .backend,
+            .database,
+            .tools{
+                height: 200px;
+                width: 600px;
+                min-width: 50%;
+                border: 1px solid black;
+            }
+            .frontend_title,
+            .backend_title,
+            .database_title,
+            .tools_title{
+                display: flex;
+                justify-content: space-between;
+                height: 72px;
+                width: 100%;
+                min-width: 50%;
+                border: 1px solid black;
+                padding: 1rem;
+            }
+            .frontend_text,
+            .backend_text,
+            .database_text,
+            .tools_text{
+                height: 40px;
+                width: 350px;
+                border: 1px solid black;
+            }
+            .frontend_more,
+            .backend_more,
+            .database_more,
+            .tools_more{
+                height: 40px;
+                width: 120px;
+                border: 1px solid black;
+            }
+            .frontend_skills,
+            .backend_skills,
+            .database_skills,
+            .tools_skills{
+                height: 128px;
+                width: 100%;
+                min-width: 50%;
+                border: 1px solid black;
+                padding: 1rem;
+                }
+                .html_icon{
+                    height: 95px;
+                    width: 95px;
+                    min-width: 50%;
+                    border: 1px solid black;
+                    
+                }
+        
+.projects {
+    height: 1400px;
+    width: 100%;
+    border: 1px solid black;
+    }
+    .featured{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        overflow: auto;
+        }
+        .view_projects{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 54px;
+            min-width: 110px;
+            border: 1px solid #000000;
+            margin: auto 1rem;
+            }
+    .project_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 1200px;
+        width: 100%;
+        border: 1px solid black;
+        overflow: auto;
+        }
+        .project_list_cont1,
+        .project_list_cont2{
+            display: flex;
+            justify-content: center;
+            margin: auto 0;
+            min-width: 614px;
+        }
+        .project_cont1,
+        .project_cont2,
+        .project_cont3,
+        .project_cont4{
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 800px;
+            min-width: 290px;
+            padding: 20px;
+            border: 1px solid black;
+            margin: auto 1rem;
+        }
+        .project1,
+        .project2,
+        .project3,
+        .project4{
+            height: 400px;
+            width: 700px;
+            min-width: 250px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+    
+
+.contacts {
+    height: 872px;
+    width: 100%;
+    border: 1px solid black;
+    
+    }
+    .contact_display_cont{
+        height: 700px;
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        }
+        .contact_display{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 600px;
+            width: 1200px;
+            min-width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+            gap: 5px;
+            margin: auto 0;
+            overflow: auto;
+            }
+            .user_email{
+                height: 54px;
+                width: 100%;
+                min-width: 250px;
+                padding: 20px;
+                border: 1px solid black;
+            }
+            .user_subject{
+                height: 54px;
+                width: 100%;
+                min-width: 250px;
+                padding: 20px;
+                border: 1px solid black;
+            }
+            .user_message{
+                height: 300px;
+                width: 100%;
+                min-width: 250px;
+                padding: 20px;
+                border: 1px solid black;
+            }
+            .user_submit{
+                height: 54px;
+                width: 100%;
+                min-width: 250px;
+                padding: 20px;
+                border: 1px solid black;
+                text-align: center;
+            }
+    .contact_footer{
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        height: 100px;
+        width: 100%;
+        border: 1px solid black;
+        overflow: auto;
+        }
+        .socmed_link{
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            width: 250px;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            margin: auto 0;
+            }
+            .fb,
+            .linkedin,
+            .github{
+                height: 38px;
+                width: 70px;
+                padding: 10px;
+                border: 1px solid black;
+                text-align: center;
+                margin: auto 0;
+            }
+        .created{
+            height: 38px;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            margin: auto 0;
+        }
+     
