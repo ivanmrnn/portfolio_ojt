@@ -55,37 +55,15 @@ button:hover{
 
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     height: 72px;
     width: 100%;
-    border: 1px solid white;
+    border-bottom: 1px solid #3b3b3b;
     background-color: #111111;
     padding: 0 1rem;
     overflow: 0 auto;
     }
-    .logo_btn{
-        display: flex;
-        justify-content: center;
-        height: 72px;
-        width: 70px;
-        border: 1px solid white;
-        background-color: #111111;
-        margin: auto 0;
-        }
-        .logo_img{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            color: #e60614;
-            height: 62px;
-            width: 60px;
-            border: 1px solid #e60614;
-            padding: 10px;
-            margin: auto 0;
-        }
-
     .nav_options {
         display: flex;
         justify-content: center;
@@ -99,7 +77,6 @@ button:hover{
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            font-family: Roboto-Bold;
             color: white;
             height: 100%;
             margin: 0 1rem;
@@ -115,7 +92,6 @@ button:hover{
     display: flex;
     height: 1080px;
     width: 100%;
-    border: 1px solid white;
     background-color: #111111;
     }
     .profile_cont{
@@ -123,7 +99,6 @@ button:hover{
         justify-content: center;
         height: 100%;
         width: 800px;
-        border: 1px solid white;
         }
         .profile_img{
             display: flex;
@@ -147,23 +122,22 @@ button:hover{
         }
         .greetings{
             color: #e60614;
-            border: 1px solid white;
         }
         .role{
             color: white;
-            border: 1px solid white;
         }
         .my_desc{
             text-align: justify;
             line-height: 1.5;
             color: white;
-            width: 100%;
-            border: 1px solid white;
+            width: 1040px;
+            padding-right: 2rem;
         }
         .about_me{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             text-align: center;
             letter-spacing: 5px;
             color: white;
@@ -171,40 +145,56 @@ button:hover{
             width: 250px;
             background: linear-gradient(45deg, #9f101b, #e60614);
         }
+        .about_me:active{
+            background: #990000;
+        }
+        .about_me:hover{
+            color: #1e1e1e;
+        }
 
 .specialization {
     display: flex;
     justify-content: space-between;
     height: 1080px;
     width: 100%;
-    border: 1px solid white;
     background-color: #111111;
     padding: 1rem;
-
     }
     .webdev,
     .mobdev,
     .uides{
         display: flex;
         flex-direction: column;
+        text-align: justify;
         gap: 1rem;
+        color: white;
         height: 500px;
         width: 600px;
         min-width: 250px;
-        padding: 20px;
+        padding: 3rem;
         margin: auto 0;
+    }
+    .mobdev:hover{
+        color: #1e1e1e;
     }
     .webdev,
     .uides{
-        background-color: #1e1e1e;
+        background: linear-gradient(45deg, #1e1e1e, #333333);
     }
     .mobdev{
         margin: auto 1rem;
         background: linear-gradient(45deg, #9f101b, #e60614);
-        }
+    }
+    .webdev:active,
+    .uides:active{
+        background: #1e1e1e;
+    }
+    .mobdev:active{
+        background: #990000;
+    }
         .webdev_icon,
         .mobdev_icon,
-        .uides_icon{
+        .uides_icon{            border: 1px solid white;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -224,34 +214,17 @@ button:hover{
         .mobdev_title,
         .uides_title{
             color: white;
-            border: 1px solid white;
         }
         .webdev_info,
         .mobdev_info,
         .uides_info{
             color: white;
-            border: 1px solid white;
+            text-align: justify;
         }
-        .webdev_more,
-        .mobdev_more,
-        .uides_more{
-            font-family: Roboto-Bold;
-            border: 1px solid white;
-        }
-        .webdev_more,
-        .uides_more{
-            color: #e60614;
-        }
-        .mobdev_more
-        {
-            color: white;
-        }
-
 .about {
     display: flex;
     height: 1080px;
     width: 100%;
-    border: 1px solid white;
     background-color: #111111;
     }
     .technical_skills{
@@ -260,23 +233,17 @@ button:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: white;
         height: 500px;
         width: 600px;
         min-width: 200px;
-        border: 1px solid white;
         margin: auto 0;
-        }
-        .technical_skills_text{
-            text-align: center;
-            color: white;
-            border: 1px solid white;
         }
 
     .others{
         height: 500px;
         width: 1250px;
         min-width: 300px;
-        border: 1px solid white;
         margin: auto 0;
         }
         .others_block1,
@@ -285,13 +252,12 @@ button:hover{
             justify-content: space-between; 
             height: 250px;
             width:  100%;
-            border: 1px solid white;
         }
         .others_block1{
             padding: 1rem 1rem 8px 1rem;
         }
         .others_block2{
-            padding: 8px 1rem rem 1rem;
+            padding: 8px 1rem 1rem 1rem;
             }
             .frontend,
             .backend,
@@ -299,7 +265,7 @@ button:hover{
             .TFL{
                 height: 100%;
                 width:600px;
-                border: 1px solid white;
+                
                 background-color: #1e1e1e;
             }
             .frontend,
@@ -316,24 +282,10 @@ button:hover{
             .TFL_title{
                 display: flex;
                 justify-content: space-between;
-                color: white;
+                color: #fa3845;
                 min-width: 50%;
-                border: 1px solid white;
+                border-bottom: 1px solid #3b3b3b;
                 padding: 1rem;
-            }
-            .frontend_text,
-            .backend_text,
-            .mobdev_others_text,
-            .TFL_text{
-                color: white;
-                border: 1px solid white;
-            }
-            .frontend_more,
-            .backend_more,
-            .mobdev_others_more,
-            .TFL_more{
-                color: #e60614;
-                border: 1px solid white;
             }
             .frontend_skills,
             .backend_skills,
@@ -343,7 +295,6 @@ button:hover{
                 justify-content: center;
                 height: 150px;
                 min-width: 50%;
-                border: 1px solid white;
                 padding: 1rem;
                 }
                 .html_icon,
