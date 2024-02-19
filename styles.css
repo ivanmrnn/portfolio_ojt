@@ -451,8 +451,8 @@ p{
                 height: 250px;
                 width: 500px;
                 min-width: 250px;
-                padding: 20px;
                 border: 1px solid white;
+                padding: 20px;
         }
         .project1_title,
         .project2_title,
@@ -472,55 +472,62 @@ p{
 .contacts {
     height: 1080px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
+    background-color: #111111;
     }
     .contact_display_cont{
-        height: 943px;
-        width: 100%;
-        border: 1px solid black;
         display: flex;
         justify-content: center;
+        height: 943px;
+        width: 100%;
+        border: 1px solid white;
         }
         .contact_display{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            gap: 1rem;
+            color: white;
             height: 600px;
             width: 600px;
             min-width: 300px;
             padding: 20px;
-            border: 1px solid black;
-            gap: 5px;
+            border: 1px solid white;
             margin: auto 0;
+            background: #1e1e1e;
             }
             .user_email{
+                color: white;
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
+                border: 1px solid white;
                 padding: 20px;
-                border: 1px solid black;
             }
             .user_subject{
+                color: white;
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
+                border: 1px solid white;
                 padding: 20px;
-                border: 1px solid black;
             }
             .user_message{
+                color: white;
                 height: 300px;
                 width: 100%;
                 min-width: 250px;
+                border: 1px solid white;
                 padding: 20px;
-                border: 1px solid black;
             }
             .user_submit{
+                text-align: center;
+                color: white;
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
                 padding: 20px;
-                border: 1px solid black;
-                text-align: center;
+                background: linear-gradient(45deg, #9f101b, #e60614);
             }
 
     .contact_footer{
@@ -528,16 +535,15 @@ p{
         justify-content: center;
         height: 100px;
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid white;
         }
         .contact_footer_cont{
             display: flex;
             justify-content: center;
-            padding: 1rem;
             height: 100px;
             width: 100%;
-            border: 1px solid black;
-            overflow: hidden;
+            border: 1px solid white;
+            padding: 1rem;
             }
             .socmed_link{
                 display: flex;
@@ -545,26 +551,28 @@ p{
                 height: 60px;
                 width: 250px;
                 padding: 10px;
-                border: 1px solid black;
+                border: 1px solid white;
                 margin: auto 0;
-                margin-left: 740px;
-                margin-right: 510px;
+                margin-left: 720px;
+                margin-right: 450px;
                 }
                 .fb,
                 .linkedin,
                 .github{
+                    text-align: center;
+                    color: white;
                     height: 38px;
                     width: 70px;
-                    padding: 10px;
-                    border: 1px solid black;
-                    text-align: center;
+                    border: 1px solid white;
                     margin: auto 0;
+                    padding: 10px;
                 }
             .created{
-                height: 38px;
-                width: 300px;
-                padding: 10px;
-                border: 1px solid black;
+                color: white;
                 text-align: center;
+                height: 38px;
+                width: 360px;
+                padding: 10px;
+                border: 1px solid white;
                 margin: auto 0;
             }
