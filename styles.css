@@ -1,13 +1,24 @@
+@font-face{
+    font-family: Roboto;
+    src: url(Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: Roboto-Bold;
+    src: url(Roboto/Roboto-Bold.ttf);
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 
 
 .container{
+    height: 100vh;
     width: 100%;
 }
 
@@ -28,14 +39,29 @@ p{
     font-size: 25px;
 }
 
+h4{
+    font-size: 25px;
+    font-family: Roboto-Bold;
+}
+
+button{
+    border-style: none;
+}
+
+button:hover{
+    color: #e60614;
+}
+
 
 .nav{
     display: flex;
     justify-content: space-between;
+    position: fixed;
     height: 72px;
     width: 100%;
     border: 1px solid white;
     background-color: #111111;
+    padding: 0 1rem;
     overflow: 0 auto;
     }
     .logo_btn{
@@ -63,7 +89,6 @@ p{
     .nav_options {
         display: flex;
         justify-content: center;
-        margin: auto 0;
         }
         .home_btn,
         .specializations_btn,
@@ -74,38 +99,21 @@ p{
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            height: 38px;
-            border: 1px solid white;
-            padding: 10px;
-            margin: 0 20px;
+            font-family: Roboto-Bold;
+            color: white;
+            height: 100%;
+            margin: 0 1rem;
+            display: flex; 
+            background-color: #111111;
         }
-        .home_btn,
-        .skills_btn,
-        .projects_btn,
         .contacts_btn {
-            width: 110px;
+            margin-right: 0;
         }
-        .specializations_btn{
-            width: 160px;
-            }
-            .home_text,
-            .skills_text,
-            .projects_text,
-            .contacts_text,
-            .specializations_text{
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                text-align: center;
-                color: white;
-                height: 28px;
-                width: 100%;
-                border: 1px solid white;  
-            }
+        
    
 .home {
     display: flex;
-    height: 1008px;
+    height: 1080px;
     width: 100%;
     border: 1px solid white;
     background-color: #111111;
@@ -113,7 +121,7 @@ p{
     .profile_cont{
         display: flex;
         justify-content: center;
-        height: 1008px;
+        height: 100%;
         width: 800px;
         border: 1px solid white;
         }
@@ -128,7 +136,6 @@ p{
             border: 1px solid white;
             margin: auto;
         }
-
     .profile{
         display: flex;
         flex-direction: column;
@@ -173,6 +180,7 @@ p{
     border: 1px solid white;
     background-color: #111111;
     padding: 1rem;
+
     }
     .webdev,
     .mobdev,
@@ -191,6 +199,7 @@ p{
         background-color: #1e1e1e;
     }
     .mobdev{
+        margin: auto 1rem;
         background: linear-gradient(45deg, #9f101b, #e60614);
         }
         .webdev_icon,
@@ -277,15 +286,12 @@ p{
             height: 250px;
             width:  100%;
             border: 1px solid white;
-            padding: 0 1rem;
         }
         .others_block1{
-            padding-top: 1rem;
-            padding-bottom: 8px;
+            padding: 1rem 1rem 8px 1rem;
         }
         .others_block2{
-            padding-top: 8px;
-            padding-bottom: 1rem;
+            padding: 8px 1rem rem 1rem;
             }
             .frontend,
             .backend,
@@ -295,6 +301,14 @@ p{
                 width:600px;
                 border: 1px solid white;
                 background-color: #1e1e1e;
+            }
+            .frontend,
+            .mobdev_others{
+                margin-right: 8px;
+            }
+            .backend,
+            .TFL{
+                margin-left: 8px;
             }
             .frontend_title,
             .backend_title,
