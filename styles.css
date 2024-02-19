@@ -46,6 +46,7 @@ h4{
 
 button{
     border-style: none;
+    background: none;
 }
 
 button:hover{
@@ -194,7 +195,7 @@ button:hover{
     }
         .webdev_icon,
         .mobdev_icon,
-        .uides_icon{            border: 1px solid white;
+        .uides_icon{            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -327,16 +328,14 @@ button:hover{
                         }
         
 .projects {
-    height: 1080px;
+    height: 1480px;
     width: 100%;
-    border: 1px solid white;
     background-color: #111111;
     }
     .featured{
         display: flex;
         justify-content: space-between;
         color: white;
-        border: 1px solid white;
         padding: 1rem;
         }
         .featured_cont{
@@ -345,38 +344,41 @@ button:hover{
             gap: 12px;
             }
             .featured_title{
-                border: 1px solid white;
                 height: 55px;
             }
             .featured_desc{
-                border: 1px solid white;
                 height: 25px;
             }
             .view_projects{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 text-align: center;
                 letter-spacing: 5px;
+                color: white;
                 height: 80px;
                 width: 250px;
                 background: linear-gradient(45deg, #9f101b, #e60614);
-                margin: auto 0;
+                }
+                .view_projects:hover {
+                    color: #1e1e1e;
+                }
+                .view_projects:active {
+                    background: #990000;
                 }
     .project_list{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 952px;
-        width: 100%;
-        border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1352px;
+    width: 100%;
         }
         .project_list_cont1,
         .project_list_cont2{
             display: flex;
             justify-content: space-evenly;
             min-width: 614px;
-            border: 1px solid white;
         }
         .project_list_cont1{
             margin-bottom: 10px;
@@ -389,10 +391,9 @@ button:hover{
         .project_cont3,
         .project_cont4{
             color: white;
-            height: 440px;
-            width: 700px;
+            height: 640px;
+            width: 900px;
             min-width: 290px;
-            border: 1px solid white;
         }
         .project1,
         .project2,
@@ -402,10 +403,9 @@ button:hover{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 370px;
-            width: 700px;
+            height: 570px;
+            width: 900px;
             min-width: 290px;
-            border: 1px solid white;
             background: #1e1e1e;
             padding: 20px;
             }
@@ -413,39 +413,26 @@ button:hover{
             .project2_img,
             .project3_img,
             .project4_img{
-                height: 250px;
-                width: 500px;
+                height: 350px;
+                width: 800px;
                 min-width: 250px;
                 border: 1px solid white;
                 padding: 20px;
         }
-        .project1_title,
-        .project2_title,
-        .project3_title,
-        .project4_title{
-            border: 1px solid white;
-        }
-        .project1_more,
-        .project2_more,
-        .project3_more,
-        .project4_more{
-            color: #e60614;
-            border: 1px solid white;
-        }
+        
+        
     
 
 .contacts {
     height: 1080px;
     width: 100%;
-    border: 1px solid white;
     background-color: #111111;
     }
     .contact_display_cont{
         display: flex;
         justify-content: center;
-        height: 943px;
+        height: 980px;
         width: 100%;
-        border: 1px solid white;
         }
         .contact_display{
             display: flex;
@@ -457,7 +444,6 @@ button:hover{
             width: 600px;
             min-width: 300px;
             padding: 20px;
-            border: 1px solid white;
             margin: auto 0;
             background: #1e1e1e;
             }
@@ -466,7 +452,7 @@ button:hover{
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
-                border: 1px solid white;
+                background: #333333;
                 padding: 20px;
             }
             .user_subject{
@@ -474,7 +460,7 @@ button:hover{
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
-                border: 1px solid white;
+                background: #333333;
                 padding: 20px;
             }
             .user_message{
@@ -482,7 +468,7 @@ button:hover{
                 height: 300px;
                 width: 100%;
                 min-width: 250px;
-                border: 1px solid white;
+                background: #333333;
                 padding: 20px;
             }
             .user_submit{
@@ -494,50 +480,27 @@ button:hover{
                 padding: 20px;
                 background: linear-gradient(45deg, #9f101b, #e60614);
             }
+            .user_submit:hover {
+                color: #1e1e1e;
+            }
+            
+            .user_submit:active {
+                background: #990000;
+            }
 
     .contact_footer{
         display: flex;
         justify-content: center;
-        height: 100px;
+        gap: 2rem;
         width: 100%;
-        border: 1px solid white;
         }
-        .contact_footer_cont{
-            display: flex;
-            justify-content: center;
-            height: 100px;
-            width: 100%;
-            border: 1px solid white;
-            padding: 1rem;
-            }
-            .socmed_link{
-                display: flex;
-                justify-content: space-between;
-                height: 60px;
-                width: 250px;
-                padding: 10px;
-                border: 1px solid white;
-                margin: auto 0;
-                margin-left: 720px;
-                margin-right: 450px;
-                }
-                .fb,
-                .linkedin,
-                .github{
-                    text-align: center;
-                    color: white;
-                    height: 38px;
-                    width: 70px;
-                    border: 1px solid white;
-                    margin: auto 0;
-                    padding: 10px;
-                }
-            .created{
-                color: white;
-                text-align: center;
-                height: 38px;
-                width: 360px;
-                padding: 10px;
-                border: 1px solid white;
-                margin: auto 0;
-            }
+        i:hover{
+            color: #e60614;
+        }
+        
+    .created{ 
+        text-align: end;
+        color:#e60614;       
+        width: 100%;
+        padding: 1rem;
+    }
