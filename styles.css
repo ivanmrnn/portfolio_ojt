@@ -49,12 +49,13 @@ button{
     background: none;
 }
 
-button:hover{
-    color: #e60614;
-}
-
 input {
     border-style: none;
+}
+
+textarea {
+    border-style: none;
+    resize: none;
 }
 
 .nav{
@@ -161,9 +162,9 @@ input {
     background-color: #111111;
     padding: 1rem;
     }
-    .webdev,
-    .mobdev,
-    .uides{
+    .webdev_sp,
+    .mobdev_sp,
+    .uides_sp{
         display: flex;
         flex-direction: column;
         text-align: justify;
@@ -175,50 +176,80 @@ input {
         padding: 3rem;
         margin: auto 0;
     }
-    .mobdev:hover{
-        color: #1e1e1e;
-    }
-    .webdev,
-    .uides{
+    .webdev_sp,
+    .uides_sp {
         background: linear-gradient(45deg, #1e1e1e, #333333);
     }
-    .mobdev{
+
+    .mobdev_sp {
         margin: auto 1rem;
         background: linear-gradient(45deg, #9f101b, #e60614);
     }
-    .webdev:active,
-    .uides:active{
+    .webdev_sp:hover,
+    .uides_sp:hover {
+        color: #e60614;
+    }
+
+    .mobdev_sp:hover {
+        color: #1e1e1e;
+    }
+
+    .webdev_img{
+        background-image: url(images/webdev-w.png);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    .webdev_sp:hover .webdev_img{
+        background-image: url(images/webdev-r.png);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        color: #e60614;
+    }
+    .mobdev_img {
+        background-image: url(images/mobdev-w.png);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    .mobdev_sp:hover .mobdev_img{
+        background-image: url(images/mobdev-b.png);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        color: #1e1e1e;
+    }
+    .uides_img {
+        background-image: url(images/uides-w.png);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+
+    .uides_sp:hover .uides_img {
+        background-image: url(images/uides-r.png);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        color: #1e1e1e;
+    }
+    
+    .webdev_sp:active,
+    .uides_sp:active{
         background: #1e1e1e;
     }
-    .mobdev:active{
+    .mobdev_sp:active{
         background: #990000;
     }
-        .webdev_icon,
-        .mobdev_icon,
-        .uides_icon{            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            height: 100px;
-            width: 100px;
-            border: 1px solid white;
-        }
-        .webdev_icon,
-        .uides_icon{
-            color: #e60614;
-        }
-        .mobdev_icon{
+        .webdev_sp_title,
+        .mobdev_sp_title,
+        .uides_sp_title{
             color: white;
         }
-        .webdev_title,
-        .mobdev_title,
-        .uides_title{
-            color: white;
-        }
-        .webdev_info,
-        .mobdev_info,
-        .uides_info{
+        .webdev_sp_info,
+        .mobdev_sp_info,
+        .uides_sp_info{
             color: white;
             text-align: justify;
         }
@@ -260,27 +291,27 @@ input {
         .others_block2{
             padding: 8px 1rem 1rem 1rem;
             }
-            .frontend,
-            .backend,
-            .mobdev_others,
-            .TFL{
+            .webdev,
+            .mobdev,
+            .TFL,
+            .other_languages{
                 height: 100%;
                 width:600px;
                 
                 background-color: #1e1e1e;
             }
-            .frontend,
-            .mobdev_others{
+            .webdev,
+            .TFL{
                 margin-right: 8px;
             }
-            .backend,
-            .TFL{
+            .mobdev,
+            .other_languages{
                 margin-left: 8px;
             }
-            .frontend_title,
-            .backend_title,
-            .mobdev_others_title,
-            .TFL_title{
+            .webdev_title,
+            .mobdev_title,
+            .TFL_title,
+            .other_languages_title{
                 display: flex;
                 justify-content: space-between;
                 color: #fa3845;
@@ -288,44 +319,28 @@ input {
                 border-bottom: 1px solid #3b3b3b;
                 padding: 1rem;
             }
-            .frontend_skills,
-            .backend_skills,
-            .mobdev_others_skills,
-            .TFL_skills{
+            .webdev_skills,
+            .mobdev_skills,
+            .TFL_skills,
+            .other_languages_skills{
                 display: flex;
-                justify-content: center;
+                justify-content: space-evenly;
                 height: 150px;
                 min-width: 50%;
                 padding: 1rem;
                 }
-                .html_icon,
-                .css_icon,
-                .java_icon,
-                .firebase_icon,
-                .github_icon,
-                .osmdroid_icon{
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                    height: 95px;
-                    width: 95px;
-                    border: 1px solid white;
+                .html_img,
+                .css_img,
+                .java_img,
+                .firebase_img,
+                .github_img,
+                .osmdroid_img,
+                .python_img{
+                    height: 80px;
+                    width: 80px;
                     margin: auto 1rem;
                     }
-                    .html_img,
-                    .css_img,
-                    .java_img,
-                    .firebase_img,
-                    .github_img,
-                    .osmdroid_img{
-                        text-align: center;
-                        color: white;
-                        height: 85px;
-                        width: 85px;
-                        border: 1px solid white;
-                        }
+
         
 .projects {
     height: 1480px;
@@ -486,10 +501,10 @@ input {
             .user_submit{
                 text-align: center;
                 color: white;
-                height: 54px;
+                height: 57px;
                 width: 100%;
                 min-width: 250px;
-                padding: 20px;
+                padding: 1rem;
                 background: linear-gradient(45deg, #9f101b, #e60614);
             }
             .user_submit:hover {
@@ -506,7 +521,14 @@ input {
         gap: 2rem;
         width: 100%;
         }
-        i:hover{
+        .bxl-facebook,
+        .bxl-linkedin,
+        .bxl-github {
+            color: white;
+        }
+        .bxl-facebook:hover,
+        .bxl-linkedin:hover,
+        .bxl-github:hover {
             color: #e60614;
         }
         
@@ -516,3 +538,4 @@ input {
         width: 100%;
         padding: 1rem;
     }
+

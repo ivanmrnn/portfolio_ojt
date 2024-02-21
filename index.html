@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <div class="container">
@@ -24,7 +24,7 @@
         
         <div class="home">
             <div class="profile_cont">
-                <img class="profile_img" src="profile_img.png"></img>
+                <img class="profile_img" src="images/profile_img.png"></img>
             </div>
 
             <div class="profile">
@@ -36,20 +36,20 @@
         </div>
 
         <div class="specialization">
-            <button class="webdev">
-                <div class="webdev_icon">webdev icon</div>
+            <button class="webdev_sp">
+                <div class="webdev_img"></div> 
                 <h2>Website Development</h2>
                 <p>I can transform design concepts into fully functional and responsive websites.</p>
             </button>
 
-            <button class="mobdev">
-                <div class="mobdev_icon">mobdev icon</div>
+            <button class="mobdev_sp">
+                <div class="mobdev_img"></div>
                 <h2>Mobile development</h2>
                 <p>I specialize in developing responsive and engaging apps, ensuring the delivery of high-quality, user-focused mobile solutions.</p>
             </button>
 
-            <button class="uides">
-                <div class="uides_icon">uides icon</div>
+            <button class="uides_sp">
+                <div class="uides_img"></div>
                 <h2>UI/UX Design</h2>
                 <p>Translating user needs into visually appealing and functional designs, combining creativity with a user-centered approach to elevate digital experiences.</p>
             </button>
@@ -60,49 +60,45 @@
 
             <div class="others">
                 <div class="others_block1">
-                    <div class="frontend">
-                        <div class="frontend_title"><h3>Web FrontEnd</h3></div>
-                        <div class="frontend_skills">
-                            <div class="html_icon">
-                                <div class="html_img">HTML</div>
-                            </div>
-                            <div class="css_icon">
-                                <div class="css_img">CSS</div>
-                            </div>
+                    <div class="webdev">
+                        <div class="webdev_title"><h3>Web Development</h3></div>
+                        <div class="webdev_skills">
+                            <img class="html_img" src="images/html.png"></img>
+                            <img class="css_img" src="images/css.png"></img>
                         </div>
                     </div>
 
-                    <div class="backend">
-                        <div class="backend_title"><h3>Web BackEnd</h3></div>
-                        <div class="backend_skills">
+                    <div class="mobdev">
+                        <div class="mobdev_title">
+                            <h3>Mobile Development</h3>
+                        </div>
+                        <div class="mobdev_skills">
+                            <img class="java_img" src="images/java.png"></img>
+                            <img class="firebase_img" src="images/firebase.png"></img>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="others_block2">
-                    <div class="mobdev_others">
-                        <div class="mobdev_others_title"><h3>Mobile Development</h3></div>
-                        <div class="mobdev_others_skills">
-                            <div class="java_icon">
-                                <div class="java_img">Java</div>
-                            </div>
-                            <div class="firebase_icon">
-                                <div class="firebase_img">Firebase</div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="TFL">
                         <div class="TFL_title"><h3>Tools, Frameworks, Libraries</h3></div>
                         <div class="TFL_skills">
-                            <div class="github_icon">
-                                <div class="github_img">Github</div>
-                            </div>
-                            <div class="osmdroid_icon">
-                                <div class="osmdroid_img">OSMDroid</div>
-                            </div>
+                            <img class="github_img" src="images/github.png"></img>
+                            <img class="osmdroid_img" src="images/osm.png"></img>
                         </div>
                     </div>
+
+                    <div class="other_languages">
+                        <div class="other_languages_title">
+                            <h3>Other Languages</h3>
+                        </div>
+                        <div class="other_languages_skills">
+                            <img class="python_img" src="images/python.png"></img>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -155,16 +151,20 @@
                     <div class="user_email">
                         <input type="email" id="email" name="email"required placeholder="Email">
                     </div>
-                    <div class="user_subject">subject</div>
-                    <div class="user_message">message</div>
-                    <div class="user_submit">submit</div>
+                    <div class="user_subject">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="user_message">
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                    </div>
+                    <button class="user_submit"><h4>Submit</h4></button>
                 </div>
             </div>
 
             <div class="contact_footer">
-                <button class="fb_link" style="font-size:24px"><i class="fa fa-facebook" style="font-size:48px;color:white"></i></button>
-                <button class="linkedin_link" style="font-size:24px"><i class="fa fa-linkedin" style="font-size:48px;color:white"></i></button>
-                <button class="github_link" style="font-size:24px"><i class="fa fa-github" style="font-size:48px;color:white"></i></button>
+                <button class="fb_link" ><i class='bx bxl-facebook bx-lg'></i></button>
+                <button class="linkedin_link" ><i class='bx bxl-linkedin bx-lg'></i></button>
+                <button class="github_link" ><i class='bx bxl-github bx-lg'></i></button>
             </div>
             <div class="created">Created by Frederic Ivan Maranan @ 2024</div>
         </div>
