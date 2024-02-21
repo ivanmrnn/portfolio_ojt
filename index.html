@@ -8,59 +8,91 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<div class="container">
+<div id="container">
     <body>
         <header>
-            <div class = "nav">
-                <div class="nav_options">
-                    <a href="#home"><button class="home_btn"><h4>HOME</h4></button></a>
-                    <a href="#specializations"><button class="specializations_btn"><h4>SPECIALIZATIONS</h4></button></a>
-                    <a href="#skills"><button class="skills_btn"><h4>SKILLS</h4></button></a>
-                    <a href="#projects"><button class="projects_btn"><h4>PROJECTS</h4></button></a>
-                    <a href="#contacts"><button class="contacts_btn"><h4>CONTACTS</h4></button></a>                    
+            <div id = "nav">
+                <div id="nav_options">
+                    <a href="#home">
+                        <button class="nav_btn">
+                            <h4>HOME</h4>
+                        </button>
+                    </a>
+                    <a href="#specializations">
+                        <button class="nav_btn">
+                            <h4>SPECIALIZATIONS</h4>
+                        </button>
+                    </a>
+                    <a href="#skills">
+                        <button class="nav_btn">
+                            <h4>SKILLS</h4>
+                        </button>
+                    </a>
+                    <a href="#projects">
+                        <button class="nav_btn">
+                            <h4>PROJECTS</h4>
+                        </button>
+                    </a>
+                    <a href="#contacts">
+                        <button class="nav_btn" id="contacts_btn">
+                            <h4>CONTACTS</h4>
+                        </button>
+                    </a>                    
                 </div>
             </div>
         </header>
         
-        <div class="home" id="home">
-            <div class="profile_cont">
-                <img class="profile_img" src="images/profile_img.png"></img>
+        <div id="home">
+            <div id="profile_cont">
+                <img id="profile_img" src="images/profile_img.png"></img>
             </div>
 
-            <div class="profile">
-                <div class="greetings"><h3>Hello Im Ivan</h3></div>
-                <div class="role"><h1>Aspiring Software Developer</h1></div>
-                <div class="my_desc"><p>I'm a 4th-year computer engineering student driven by a passion in completing projects, constant learning, and adapting swiftly to emerging technologies. As I aspire to become a proficient full-stack and mobile app developer, I look forward to making a meaningful impact in the ever-evolving tech industry.</p></div>
-                <button class="about_me"><h4>ABOUT ME</h4></button>
+            <div id="profile">
+                <div id="greetings"><h3>Hello Im Ivan</h3></div>
+                <div id="role"><h1>Aspiring Software Developer</h1></div>
+                <div id="my_desc"><p>I'm a 4th-year computer engineering student driven by a passion in completing projects, constant learning, and adapting swiftly to emerging technologies. As I aspire to become a proficient full-stack and mobile app developer, I look forward to making a meaningful impact in the ever-evolving tech industry.</p></div>
+                <a href="#specializations">
+                    <button id="about_me">
+                        <h4>ABOUT ME</h4>
+                    </button>
+                </a>
             </div>    
         </div>
 
-        <div class="specializations" id="specializations">
-            <button class="webdev_sp">
-                <div class="webdev_img"></div> 
-                <h2>Website Development</h2>
-                <p>I can transform design concepts into fully functional and responsive websites.</p>
-            </button>
+        <div id="specializations">
+            <a href="#skills" class="sp_link">
+                <button class="sp_btn" id="webdev_sp">
+                    <div class="sp_img" id="webdev_img"></div>
+                    <h2>Website Development</h2>
+                    <p>I can transform design concepts into fully functional and responsive websites.</p>
+                </button>
+            </a>
 
-            <button class="mobdev_sp">
-                <div class="mobdev_img"></div>
-                <h2>Mobile development</h2>
-                <p>I specialize in developing responsive and engaging apps, ensuring the delivery of high-quality, user-focused mobile solutions.</p>
-            </button>
+            <a href="#skills" class="sp_link">
+                <button class="sp_btn" id="mobdev_sp">
+                    <div class="sp_img" id="mobdev_img"></div>
+                    <h2>Mobile development</h2>
+                    <p>I specialize in developing responsive and engaging apps, ensuring the delivery of high-quality, user-focused
+                        mobile solutions.</p>
+                </button>
+            </a>
 
-            <button class="uides_sp">
-                <div class="uides_img"></div>
-                <h2>UI/UX Design</h2>
-                <p>Translating user needs into visually appealing and functional designs, combining creativity with a user-centered approach to elevate digital experiences.</p>
-            </button>
+            <a href="#skills" class="sp_link">
+                <button class="sp_btn" id="uides_sp">
+                    <div class="sp_img" id="uides_img"></div>
+                    <h2>UI/UX Design</h2>
+                    <p>Translating user needs into visually appealing and functional designs, combining creativity with a user-centered
+                        approach to elevate digital experiences.</p>
+                </button>
+            </a>
         </div>
 
-        <div class="about" id="skills">
-            <div class="technical_skills"><h2>Technical Skills</h2></div>
+        <div id="skills">
+            <div id="technical_skills"><h2>Technical Skills</h2></div>
 
-            <div class="others">
-                <div class="others_block1">
-                    <div class="webdev">
+            <div id="others">
+                <div class="others_block" id="others_block1">
+                    <div class="skills" id="webdev">
                         <div class="webdev_title"><h3>Web Development</h3></div>
                         <div class="webdev_skills">
                             <img class="html_img" src="images/html.png"></img>
@@ -68,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="mobdev">
+                    <div class="skills" id="mobdev">
                         <div class="mobdev_title">
                             <h3>Mobile Development</h3>
                         </div>
@@ -80,9 +112,9 @@
 
                 </div>
 
-                <div class="others_block2">
+                <div class="others_block" id="others_block2">
 
-                    <div class="TFL">
+                    <div class="skills" id="TFL">
                         <div class="TFL_title"><h3>Tools, Frameworks, Libraries</h3></div>
                         <div class="TFL_skills">
                             <img class="github_img" src="images/github-w.png"></img>

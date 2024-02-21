@@ -15,13 +15,6 @@
     font-family: Roboto;
 }
 
-
-
-.container{
-    height: 100vh;
-    width: 100%;
-}
-
 h1{
     font-size: 80px;
 }
@@ -66,7 +59,12 @@ html{
     scroll-behavior: smooth;
 }
 
-.nav{
+#container {
+    height: 100vh;
+    width: 100%;
+}
+
+#nav{
     display: flex;
     justify-content: end;
     position: fixed;
@@ -77,14 +75,10 @@ html{
     padding: 0 1rem;
     overflow: 0 auto;
     }
-    .nav_options {
+    #nav_options {
         display: flex;
         }
-        .home_btn,
-        .specializations_btn,
-        .skills_btn,
-        .projects_btn,
-        .contacts_btn {
+        .nav_btn {
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -95,31 +89,27 @@ html{
             display: flex; 
             background-color: #111111;
         }
-        .contacts_btn {
+        #contacts_btn {
             margin-right: 0;
         }
-        .home_btn:hover,
-        .specializations_btn:hover,
-        .skills_btn:hover,
-        .projects_btn:hover,
-        .contacts_btn:hover {
+        .nav_btn:hover {
             color: #e60614;
         }
         
    
-.home {
+#home {
     display: flex;
     height: 1080px;
     width: 100%;
     background-color: #111111;
     }
-    .profile_cont{
+    #profile_cont{
         display: flex;
         justify-content: center;
         height: 100%;
         width: 800px;
         }
-        .profile_img{
+        #profile_img{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -128,7 +118,7 @@ html{
             width: 300px;
             margin: auto;
         }
-    .profile{
+    #profile{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -137,20 +127,20 @@ html{
         width: 1200px;
         padding: 1rem;
         }
-        .greetings{
+        #greetings{
             color: #e60614;
         }
-        .role{
+        #role{
             color: white;
         }
-        .my_desc{
+        #my_desc{
             text-align: justify;
             line-height: 1.5;
             color: white;
             width: 1040px;
             padding-right: 2rem;
         }
-        .about_me{
+        #about_me{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -162,14 +152,14 @@ html{
             width: 250px;
             background: linear-gradient(45deg, #9f101b, #e60614);
         }
-        .about_me:active{
+        #about_me:active{
             background: #990000;
         }
-        .about_me:hover{
+        #about_me:hover{
             color: #1e1e1e;
         }
 
-.specializations {
+#specializations {
     display: flex;
     justify-content: space-between;
     height: 1080px;
@@ -177,9 +167,10 @@ html{
     background-color: #111111;
     padding: 1rem;
     }
-    .webdev_sp,
-    .mobdev_sp,
-    .uides_sp{
+    .sp_link{
+        margin: auto 0;
+    }
+    .sp_btn {
         display: flex;
         flex-direction: column;
         text-align: justify;
@@ -191,58 +182,56 @@ html{
         padding: 3rem;
         margin: auto 0;
     }
-    .webdev_sp,
-    .uides_sp {
+    #webdev_sp,
+    #uides_sp {
         background: linear-gradient(45deg, #1e1e1e, #333333);
     }
 
-    .mobdev_sp {
+    #mobdev_sp {
         margin: auto 1rem;
         background: linear-gradient(45deg, #9f101b, #e60614);
     }
-    .webdev_sp:hover,
-    .uides_sp:hover {
+    #webdev_sp:hover,
+    #uides_sp:hover {
         color: #e60614;
     }
 
-    .mobdev_sp:hover {
+    #mobdev_sp:hover {
         color: #1e1e1e;
     }
 
-    .webdev_img{
-        background-image: url(images/webdev-w.png);
+    .sp_img {
         background-size: cover;
         height: 100px;
         width: 100px;
     }
-    .webdev_sp:hover .webdev_img{
+
+    #webdev_img{
+        background-image: url(images/webdev-w.png);
+        
+    }
+    #webdev_sp:hover #webdev_img{
         background-image: url(images/webdev-r.png);
         background-size: cover;
         height: 100px;
         width: 100px;
         color: #e60614;
     }
-    .mobdev_img {
+    #mobdev_img {
         background-image: url(images/mobdev-w.png);
-        background-size: cover;
-        height: 100px;
-        width: 100px;
     }
-    .mobdev_sp:hover .mobdev_img{
+    #mobdev_sp:hover #mobdev_img{
         background-image: url(images/mobdev-b.png);
         background-size: cover;
         height: 100px;
         width: 100px;
         color: #1e1e1e;
     }
-    .uides_img {
+    #uides_img {
         background-image: url(images/uides-w.png);
-        background-size: cover;
-        height: 100px;
-        width: 100px;
     }
 
-    .uides_sp:hover .uides_img {
+    #uides_sp:hover #uides_img {
         background-image: url(images/uides-r.png);
         background-size: cover;
         height: 100px;
@@ -250,31 +239,21 @@ html{
         color: #1e1e1e;
     }
     
-    .webdev_sp:active,
-    .uides_sp:active{
+    #webdev_sp:active,
+    #uides_sp:active{
         background: #1e1e1e;
     }
-    .mobdev_sp:active{
+    #mobdev_sp:active{
         background: #990000;
     }
-        .webdev_sp_title,
-        .mobdev_sp_title,
-        .uides_sp_title{
-            color: white;
-        }
-        .webdev_sp_info,
-        .mobdev_sp_info,
-        .uides_sp_info{
-            color: white;
-            text-align: justify;
-        }
-.about {
+
+#skills {
     display: flex;
     height: 1080px;
     width: 100%;
     background-color: #111111;
     }
-    .technical_skills{
+    #technical_skills{
         display: flex;
         flex: auto;
         flex-direction: column;
@@ -287,23 +266,22 @@ html{
         margin: auto 0;
         }
 
-    .others{
+    #others{
         height: 500px;
         width: 1250px;
         min-width: 300px;
         margin: auto 0;
         }
-        .others_block1,
-        .others_block2{
+        .others_block{
             display: flex;
             justify-content: space-between; 
             height: 250px;
             width:  100%;
         }
-        .others_block1{
+        #others_block1{
             padding: 1rem 1rem 8px 1rem;
         }
-        .others_block2{
+        #others_block2{
             padding: 8px 1rem 1rem 1rem;
             }
             .webdev,
