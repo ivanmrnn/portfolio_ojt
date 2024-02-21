@@ -53,10 +53,13 @@ button:hover{
     color: #e60614;
 }
 
+input {
+    border-style: none;
+}
 
 .nav{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     position: fixed;
     height: 72px;
     width: 100%;
@@ -67,7 +70,6 @@ button:hover{
     }
     .nav_options {
         display: flex;
-        justify-content: center;
         }
         .home_btn,
         .specializations_btn,
@@ -106,10 +108,8 @@ button:hover{
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            color: white;
             height:300px;
             width: 300px;
-            border: 1px solid white;
             margin: auto;
         }
     .profile{
@@ -448,28 +448,40 @@ button:hover{
             background: #1e1e1e;
             }
             .user_email{
-                color: white;
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
+            }
+            #email{
+                color: white;
+                height: 100%;
+                width: 100%;
+                padding: 1rem;
                 background: #333333;
-                padding: 20px;
             }
             .user_subject{
-                color: white;
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
+            }
+            #subject {
+                color: white;
+                height: 100%;
+                width: 100%;
+                padding: 1rem;
                 background: #333333;
-                padding: 20px;
             }
             .user_message{
-                color: white;
                 height: 300px;
                 width: 100%;
                 min-width: 250px;
+            }
+            #message {
+                color: white;
+                height: 100%;
+                width: 100%;
+                padding: 1rem;
                 background: #333333;
-                padding: 20px;
             }
             .user_submit{
                 text-align: center;
