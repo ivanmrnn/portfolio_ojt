@@ -58,6 +58,10 @@ textarea {
     resize: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .nav{
     display: flex;
     justify-content: end;
@@ -89,6 +93,13 @@ textarea {
         }
         .contacts_btn {
             margin-right: 0;
+        }
+        .home_btn:hover,
+        .specializations_btn:hover,
+        .skills_btn:hover,
+        .projects_btn:hover,
+        .contacts_btn:hover {
+            color: #e60614;
         }
         
    
@@ -521,15 +532,47 @@ textarea {
         gap: 2rem;
         width: 100%;
         }
-        .bxl-facebook,
-        .bxl-linkedin,
-        .bxl-github {
-            color: white;
-        }
-        .bxl-facebook:hover,
-        .bxl-linkedin:hover,
-        .bxl-github:hover {
+        .fb_link {
+            background-image: url(images/fb-w.png);
+            background-size: cover;
+            height: 50px;
+            width: 50px;
             color: #e60614;
+        }
+
+        .fb_link:hover {
+            background-image: url(images/fb-r.png);
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+        }
+        .linkedin_link {
+            background-image: url(images/linkedin-w.png);
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            color: #e60614;
+        }
+
+        .linkedin_link:hover {
+            background-image: url(images/linkedin-r.png);
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+        }
+        .github_link {
+            background-image: url(images/github-w.png);
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            color: #e60614;
+        }
+
+        .github_link:hover {
+            background-image: url(images/github-r.png);
+            background-size: cover;
+            height: 50px;
+            width: 50px;
         }
         
     .created{ 
