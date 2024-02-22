@@ -253,7 +253,7 @@ html{
     width: 100%;
     background-color: #111111;
     }
-    #technical_skills{
+    #technical_skills_text{
         display: flex;
         flex: auto;
         flex-direction: column;
@@ -266,45 +266,39 @@ html{
         margin: auto 0;
         }
 
-    #others{
+    #technical_skills_cont{
         height: 500px;
         width: 1250px;
         min-width: 300px;
         margin: auto 0;
         }
-        .others_block{
+        .technical_skills_block{
             display: flex;
             justify-content: space-between; 
             height: 250px;
             width:  100%;
         }
-        #others_block1{
+        #technical_skills_block1{
             padding: 1rem 1rem 8px 1rem;
         }
-        #others_block2{
+        #technical_skills_block2{
             padding: 8px 1rem 1rem 1rem;
             }
-            .webdev,
-            .mobdev,
-            .TFL,
-            .other_languages{
+            .technical_skills{
                 height: 100%;
                 width:600px;
                 
                 background-color: #1e1e1e;
             }
-            .webdev,
-            .TFL{
+            #webdev,
+            #TFL{
                 margin-right: 8px;
             }
-            .mobdev,
-            .other_languages{
+            #mobdev,
+            #other_languages{
                 margin-left: 8px;
             }
-            .webdev_title,
-            .mobdev_title,
-            .TFL_title,
-            .other_languages_title{
+            .technical_skills_title{
                 display: flex;
                 justify-content: space-between;
                 color: #fa3845;
@@ -312,53 +306,44 @@ html{
                 border-bottom: 1px solid #3b3b3b;
                 padding: 1rem;
             }
-            .webdev_skills,
-            .mobdev_skills,
-            .TFL_skills,
-            .other_languages_skills{
+            .technical_skills_list{
                 display: flex;
                 justify-content: space-evenly;
                 height: 150px;
                 min-width: 50%;
                 padding: 1rem;
                 }
-                .html_img,
-                .css_img,
-                .java_img,
-                .firebase_img,
-                .github_img,
-                .osmdroid_img,
-                .python_img{
+                .technical_skills_img{
                     height: 80px;
                     width: 80px;
                     margin: auto 1rem;
                     }
 
         
-.projects {
+#projects {
     height: 1552px;
     width: 100%;
     background-color: #111111;
     padding-top: 72px;
     }
-    .featured{
+    #featured{
         display: flex;
         justify-content: space-between;
         color: white;
         padding: 1rem;
         }
-        .featured_cont{
+        #featured_cont{
             display: flex;
             flex-direction: column;
             gap: 12px;
             }
-            .featured_title{
+            #featured_title{
                 height: 55px;
             }
-            .featured_desc{
+            #featured_desc{
                 height: 25px;
             }
-            .view_projects{
+            #view_projects{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -370,44 +355,37 @@ html{
                 width: 250px;
                 background: linear-gradient(45deg, #9f101b, #e60614);
                 }
-                .view_projects:hover {
+                #view_projects:hover {
                     color: #1e1e1e;
                 }
-                .view_projects:active {
+                #view_projects:active {
                     background: #990000;
                 }
-    .project_list{
+    #project_list{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 1352px;
     width: 100%;
         }
-        .project_list_cont1,
-        .project_list_cont2{
+        .project_list_cont{
             display: flex;
             justify-content: space-evenly;
             min-width: 614px;
         }
-        .project_list_cont1{
+        #project_list_cont1{
             margin-bottom: 10px;
         }
-        .project_list_cont2{
+        #project_list_cont2{
             margin-top: 10px;
         }
-        .project_cont1,
-        .project_cont2,
-        .project_cont3,
-        .project_cont4{
+        .project_cont{
             color: white;
             height: 640px;
             width: 900px;
             min-width: 290px;
         }
-        .project1,
-        .project2,
-        .project3,
-        .project4{
+        .project{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -418,32 +396,26 @@ html{
             background: #1e1e1e;
             padding: 20px;
             }
-            .project1_img,
-            .project2_img,
-            .project3_img,
-            .project4_img{
+            .project_img{
                 height: 350px;
                 width: 800px;
                 min-width: 250px;
                 border: 1px solid white;
                 padding: 20px;
         }
-        
-        
-    
 
-.contacts {
-    height: 1080px;
+#contacts {
+    height: 1082px;
     width: 100%;
     background-color: #111111;
     }
-    .contact_display_cont{
+    #contact_display_cont{
         display: flex;
         justify-content: center;
         height: 980px;
         width: 100%;
         }
-        .contact_display{
+        #contact_display{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -456,7 +428,7 @@ html{
             margin: auto 0;
             background: #1e1e1e;
             }
-            .user_email{
+            #user_email{
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
@@ -468,7 +440,7 @@ html{
                 padding: 1rem;
                 background: #333333;
             }
-            .user_subject{
+            #user_subject{
                 height: 54px;
                 width: 100%;
                 min-width: 250px;
@@ -480,7 +452,7 @@ html{
                 padding: 1rem;
                 background: #333333;
             }
-            .user_message{
+            #user_message{
                 height: 300px;
                 width: 100%;
                 min-width: 250px;
@@ -492,7 +464,7 @@ html{
                 padding: 1rem;
                 background: #333333;
             }
-            .user_submit{
+            #user_submit{
                 text-align: center;
                 color: white;
                 height: 57px;
@@ -501,21 +473,21 @@ html{
                 padding: 1rem;
                 background: linear-gradient(45deg, #9f101b, #e60614);
             }
-            .user_submit:hover {
+            #user_submit:hover {
                 color: #1e1e1e;
             }
             
-            .user_submit:active {
+            #user_submit:active {
                 background: #990000;
             }
 
-    .contact_footer{
+    #contact_footer{
         display: flex;
         justify-content: center;
         gap: 2rem;
         width: 100%;
         }
-        .fb_link {
+        #fb_link {
             background-image: url(images/fb-w.png);
             background-size: cover;
             height: 50px;
@@ -523,13 +495,13 @@ html{
             color: #e60614;
         }
 
-        .fb_link:hover {
+        #fb_link:hover {
             background-image: url(images/fb-r.png);
             background-size: cover;
             height: 50px;
             width: 50px;
         }
-        .linkedin_link {
+        #linkedin_link {
             background-image: url(images/linkedin-w.png);
             background-size: cover;
             height: 50px;
@@ -537,13 +509,13 @@ html{
             color: #e60614;
         }
 
-        .linkedin_link:hover {
+        #linkedin_link:hover {
             background-image: url(images/linkedin-r.png);
             background-size: cover;
             height: 50px;
             width: 50px;
         }
-        .github_link {
+        #github_link {
             background-image: url(images/github-w.png);
             background-size: cover;
             height: 50px;
@@ -551,17 +523,16 @@ html{
             color: #e60614;
         }
 
-        .github_link:hover {
+        #github_link:hover {
             background-image: url(images/github-r.png);
             background-size: cover;
             height: 50px;
             width: 50px;
         }
         
-    .created{ 
+    #created{ 
         text-align: end;
         color:#e60614;       
         width: 100%;
         padding: 1rem;
     }
-
