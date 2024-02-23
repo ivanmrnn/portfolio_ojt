@@ -134,6 +134,29 @@ html {
     padding: 1rem;
 }
 
+.tabs {
+    display: flex;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.content {
+    display: none;
+    height: 500px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.active {
+    display: block;
+}
+
 #greetings {
     color: #e60614;
 }
