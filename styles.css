@@ -73,7 +73,6 @@ html {
     border-bottom: 1px solid #3b3b3b;
     background-color: #111111;
     padding: 0 1rem;
-    overflow: 0 auto;
 }
 
 #nav_options {
@@ -174,8 +173,9 @@ html {
 
 #specializations {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 100vh;
+    max-height: 200vh;
     width: 100%;
     background-color: #111111;
     padding: 1rem;
@@ -191,11 +191,11 @@ html {
     text-align: justify;
     gap: 1rem;
     color: white;
-    height: 500px;
-    width: 600px;
+    height: 480px;
+    width: 580px;
     min-width: 250px;
     padding: 3rem;
-    margin: auto 0;
+    margin: 1rem;
 }
 
 #webdev_sp,
@@ -204,7 +204,6 @@ html {
 }
 
 #mobdev_sp {
-    margin: auto 1rem;
     background: linear-gradient(45deg, #9f101b, #e60614);
 }
 
@@ -383,6 +382,7 @@ html {
 #view_projects {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
