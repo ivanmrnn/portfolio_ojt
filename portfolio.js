@@ -1,28 +1,43 @@
 
-var tab_content_1 = document.getElementById('content-1');
-var tab_content_2 = document.getElementById('content-2');
+var web_projects_list_cont = document.getElementById('web_projects_list_cont');
+var mobile_projects_list_cont = document.getElementById('mobile_projects_list_cont');
+var other_projects_list_cont = document.getElementById('mother_projects_list_cont');
 
-var about_tab = document.getElementById('about_tab_btn');
-var experience_tab = document.getElementById('experience_tab_btn');
+var web_projects_btn = document.getElementById('web_projects_btn');
+var mobile_projects_btn = document.getElementById('mobile_projects_btn');
+var other_projects_btn = document.getElementById('other_projects_btn');
+
 function showTab(e) {
-
   if (e == 1) {
-    tab_content_1.classList.add("tab_cont_active")
-    tab_content_2.classList.remove("tab_cont_active")
+    web_projects_list_cont.classList.add("tab_cont_active")
+    mobile_projects_list_cont.classList.remove("tab_cont_active")
+    other_projects_list_cont.classList.remove("tab_cont_active")
 
-    about_tab.classList.add("tab_active")
-    experience_tab.classList.remove("tab_active")
+    web_projects_btn.classList.add("tab_active")
+    mobile_projects_btn.classList.remove("tab_active")
+    other_projects_btn.classList.remove("tab_active") 
+  }
+  else if (e == 2) {
+    web_projects_list_cont.classList.remove("tab_cont_active")
+    mobile_projects_list_cont.classList.add("tab_cont_active")
+    other_projects_list_cont.classList.remove("tab_cont_active")
+
+    web_projects_btn.classList.remove("tab_active")
+    mobile_projects_btn.classList.add("tab_active")
+    other_projects_btn.classList.remove("tab_active")
   }
   else {
-    tab_content_2.classList.add("tab_cont_active")
-    tab_content_1.classList.remove("tab_cont_active")
+    web_projects_list_cont.classList.remove("tab_cont_active")
+    mobile_projects_list_cont.classList.remove("tab_cont_active")
+    other_projects_list_cont.classList.add("tab_cont_active")
 
-    experience_tab.classList.add("tab_active")
-    about_tab.classList.remove("tab_active")
+    web_projects_btn.classList.remove("tab_active")
+    mobile_projects_btn.classList.remove("tab_active")
+    other_projects_btn.classList.add("tab_active")
   }
 }
 
-var home_section = document.getElementById("home")
+/*var home_section = document.getElementById("home")
 var services_section = document.getElementById("services")
 var skills_section = document.getElementById("skills")
 var projects_section = document.getElementById("projects")
@@ -106,4 +121,4 @@ intersectionObserver.observe(services_section);
 intersectionObserver.observe(skills_section);
 intersectionObserver.observe(projects_section);
 intersectionObserver.observe(certificates_section);
-intersectionObserver.observe(contacts_section);
+intersectionObserver.observe(contacts_section);*/
