@@ -15,6 +15,8 @@
     font-family: Roboto;
 }
 
+
+
 h1 {
     font-size: 62px;
 }
@@ -71,6 +73,7 @@ html {
     width: 100%;
     background-color: transparent;
     padding: 2rem 10rem;
+    z-index: 2;
 }
 
 #nav_options {
@@ -111,8 +114,116 @@ html {
     display: flex;
     height: 100vh;
     width: 100%;
-    background-color: #101630;
+    background-color: #131B3A;
     padding: 10rem;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes animate_circles {
+    0%{
+        opacity: 1;
+        border-radius: 0;
+        transform: translateY(0) rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        border-radius: 50%;
+        transform: translateY(-1000px) rotate(720deg);
+    }
+}
+
+.circles div{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    bottom: -150px;
+    animation: animate_circles 25s linear infinite;
+    z-index: 1;
+}
+
+.circles div:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s; 
+}
+
+.circles div:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s; 
+}
+
+.circles div:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s; 
+}
+
+.circles div:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s; 
+}
+
+.circles div:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s; 
+}
+
+.circles div:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s; 
+}
+
+.circles div:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s; 
+}
+
+.circles div:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s; 
+}
+
+.circles div:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s; 
+}
+
+.circles div:nth-child(7){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s; 
 }
 
 #profile_container {
@@ -129,6 +240,7 @@ html {
     height: 300px;
     width: 300px;
     margin: auto;
+    z-index: 2;
 }
 
 #profile {
@@ -145,12 +257,32 @@ html {
     gap: 1rem;
 }
 
-#greetings {
-    color: #4ab5d1;
+#greetings_container{
+    display: inline-block;
+    width: fit-content;
 }
 
+#greetings {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 10px;
+    color: #4ab5d1;
+    border-right: 5px solid #4ab5d1;
+    animation: typing 2s steps(15), cursor .6s step-end infinite alternate;
+}
+
+
 #role {
-    color: white;
+    color: white;    
+}
+
+@keyframes cursor {
+    50% { border-color: transparent}
+}
+
+@keyframes typing {
+    from { width: 0}    
 }
 
 #my_desc {
@@ -188,6 +320,7 @@ html {
     background: linear-gradient(135deg, #3b13a9, #5fb2db);
     box-shadow: 0 0 15px #4ab5d1;
 }
+
 
 
 #services {

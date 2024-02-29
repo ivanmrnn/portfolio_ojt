@@ -1,4 +1,3 @@
-
 var web_projects_list_cont = document.getElementById('web_projects_list_cont');
 var mobile_projects_list_cont = document.getElementById('mobile_projects_list_cont');
 var other_projects_list_cont = document.getElementById('mother_projects_list_cont');
