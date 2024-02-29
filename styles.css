@@ -405,14 +405,13 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     height: 100vh;
     width: 100%;
     background-color: #131B3A;
     padding: 2rem 9rem;
 }
 
-#skills_cont{
+#skills_container{
     display: flex;
 }
 
