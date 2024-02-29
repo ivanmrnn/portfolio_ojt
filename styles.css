@@ -22,16 +22,15 @@ h1 {
 }
 
 h2 {
-    font-size: 35px;
-    font-family: Roboto-Bold;
+    font-size: 45px;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 p {
-    font-size: 22px;
+    font-size: 25px;
 }
 
 h4 {
@@ -338,8 +337,6 @@ html {
     border-radius: 10px;
     background: #233266;
     margin: 0 1rem; 
-    
- 
 }
 .services_expand{
     height: 0;
@@ -454,10 +451,9 @@ html {
 
 
 #projects {
-    height: 200vh;
     width: 100%;
     background-color: #101630;
-    padding: 0 9rem;
+    padding: 2rem 9rem;
 }
 
 .tabs {
@@ -475,7 +471,6 @@ html {
 .tab_cont {
     display: none;
     gap: 10rem;
-    border: 1px solid white;
     padding: 1rem;
 }
 
@@ -492,7 +487,7 @@ html {
 .projects_list {
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    gap: 3rem;
 }
 
 .projects_container{
@@ -500,14 +495,88 @@ html {
     justify-content: space-between;
 }
 
-.projects_content{
+.projects_content_container{
+    display: flex;
+    flex-direction: column;
     width: 49%;
-    border: 1px solid white ;
+}
+
+.projects_content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 418px;
+    width:800px;
+    gap: 2rem;
+}
+
+.projects_title{
+    color: #536fff;
+}
+
+.projects_type{
+    font-weight: bolder;
+    color: white;
+}
+
+.projects_description{
+    color: white;
+}
+
+.projects_content_skills_container{
+    display: flex;
+    height: 82px;
+    width: 800px;
+}
+
+.projects_content_skills{
+    display: flex;
+    height: 82px;
+    width: 220px;
+    border-radius: 8px;
+    background: #233266;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.projects_skills_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    margin-right: 1rem;
+}
+
+.projects_skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    height: 50px;
+    width: 120px;
+}
+
+.projects_img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    background: #233266;
+    height: 500px;
 }
 
 .projects_img{
-    width: 49%;
+    color: white;
     border: 1px solid white;
+    width: 800px;
+    height: 400px;
+
 }
 
 
@@ -541,7 +610,7 @@ html {
 
 #contacts_desc{
     color: white;
-    padding: 6rem 0;
+    padding: 5rem 0;
 }
 
 #contacts_links {
