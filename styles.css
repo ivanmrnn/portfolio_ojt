@@ -408,7 +408,7 @@ html {
 
     height: 100vh;
     width: 100%;
-    background-color: #101630;
+    background-color: #131B3A;
     padding: 2rem 9rem;
 }
 
@@ -463,15 +463,15 @@ html {
 }
 
 .tab {
+    font-weight: bolder;
     color: white;
-    padding: 10px;
+    padding: 1rem 2rem;
     cursor: pointer;
 }
 
 .tab_cont {
     display: none;
-    gap: 10rem;
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
 }
 
 .tab_cont_active {
@@ -479,15 +479,15 @@ html {
 }
 
 .tab_active {
-    color: #71c5da;
-    text-shadow: 0 0 25px #4ab5d1;
-    border-bottom: 2px solid #4ab5d1;
+    color: #536fff;
+    border-bottom: 2px solid #536fff;
 }
 
 .projects_list {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
 }
 
 .projects_container{
@@ -704,8 +704,11 @@ html {
 
 
 #created {
-    text-align: end;
-    color: #e60614;
-    width: 100%;
-    padding: 1rem;
+    position: fixed;
+    font-size: 1rem;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    bottom: 100px;
+    left:85px;
+    color:  #2c2a89;
 }
