@@ -78,7 +78,7 @@
                     <a href="#resume">
                         <button id="resume">
                             <p>RESUME</p>
-                            <div id="resume_new_tab_img"></div>
+                            <img src="images/new_tab.svg" id="resume_new_tab_img"></img>
                         </button>
                     </a>
                 </div>
@@ -91,8 +91,12 @@
                     <div class="services_cont" id="webdev_services_cont">
                         <button class="services_btn" id="webdev_services">
                             <div class="services_btn_title_cont">
-                                <div class="services_img" id="webdev_img"></div>
-                                <h2>Website Development</h2>
+                                <div class="services_icon_container">
+                                    <img src="images/webdev.svg" class="services_img" id="webdev_img"></img>
+                                </div>
+                                <div class="services_title">
+                                    <h2>Website Development</h2>
+                                </div>
                             </div>
                             <p>I can transform design concepts into fully functional and responsive websites.</p>
                         </button>
@@ -106,8 +110,12 @@
                     <div class="services_cont" id="mobdev_services_cont">
                         <button class="services_btn" id="mobdev_services">
                             <div class="services_btn_title_cont">
-                                <div class="services_img" id="mobdev_img"></div>
-                                <h2>Mobile development</h2>
+                                <div class="services_icon_container">
+                                    <img src="images/mobdev.svg" class="services_img" id="mobdev_img"></img>
+                                </div>
+                                <div class="services_title">
+                                    <h2>Mobile development</h2>
+                                </div>
                             </div>
                             <p>I specialize in developing responsive and engaging apps, ensuring the delivery of high-quality,
                                 user-focused
@@ -242,35 +250,32 @@
         <div id="contacts">
             <div id="contacts_container">
                 <div id="contacts_info">
-                    <div class="contacts_title">
-                        contact Me
+                    <div id="contacts_title">
+                        <h1>Contact Me</h1>
                     </div>
-                    <div class="contacts_desc">
-                        lorem ipsum
+                    <div id="contacts_desc">
+                        <p>Have a question or want to work together? <br><br>Send an email.<br><br> I’ll respond as soon as possible.</p>
                     </div>
-                    <div id="contact_footer">
+                    <div id="contacts_links">
                         <a href="https://m.facebook.com/ivan.maranan.9" target="_blank">
                             <button id="fb_link">
-                                <div class="fb_img"></div> </i>
+                                <img src="images/fb.svg" class="social_img"></img>
                             </button>
                         </a>
                         <a href="https://www.linkedin.com/in/frederic-ivan-maranan-212a70248?trk=people-guest_people_search-card&originalSubdomain=ph"
                             target="_blank">
                             <button id="linkedin_link">
-                                <div class="linkedin_img"></div>
+                                <img src="images/linkedin.svg" class="social_img"></img>
                             </button>
                         </a>
                         <a href="https://github.com/ivanmrnn" target="_blank">
                             <button id="github_link">
-                                <div class="github_img"></div>
+                                <img src="images/github.svg" class="social_img"></img>
                             </button>
                         </a>
                     </div>
                 </div>
                 <div id="contacts_box">
-                    <div id="contact_title">
-                        <h2>Contact Me</h2>
-                    </div>
                     <div id="user_email">
                         <input type="email" id="email" name="email" required placeholder="Email">
                     </div>
@@ -286,26 +291,10 @@
                 </div>
             </div>
 
-            <div id="contact_footer">
-                <a href="https://m.facebook.com/ivan.maranan.9" target="_blank">
-                    <button id="fb_link">
-                        <div class="fb_img"></div> </i>
-                    </button>
-                </a>
-                <a href="https://www.linkedin.com/in/frederic-ivan-maranan-212a70248?trk=people-guest_people_search-card&originalSubdomain=ph"
-                    target="_blank">
-                    <button id="linkedin_link">
-                        <div class="linkedin_img"></div>
-                    </button>
-                </a>
-                <a href="https://github.com/ivanmrnn" target="_blank">
-                    <button id="github_link">
-                        <div class="github_img"></div>
-                    </button>
-                </a>
-            </div>
-            <div id="created">Created by Frederic Ivan Maranan @ 2024</div>
+            
+            
         </div>
+        <!--<div id="created">Created by Frederic Ivan Maranan @ 2024</div>-->
     </div>
 </body>
 <script src="/portfolio.js"></script>

@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 35px;
     font-family: Roboto-Bold;
 }
 
@@ -101,13 +101,11 @@ html {
 }
 
 .nav_btn:hover {
-    color: #71c5da;
-    text-shadow: 0 0 5px #4ab5d1;
+    color: #536fff;
 }
 
 .section_active{
-    color: #71c5da;
-    text-shadow: 0 0 5px #4ab5d1;
+    color: #536fff;
 }
 
 #home {
@@ -267,8 +265,8 @@ html {
     white-space: nowrap;
     overflow: hidden;
     padding-right: 10px;
-    color: #4ab5d1;
-    border-right: 5px solid #4ab5d1;
+    color: #536fff;
+    border-right: 5px solid #536fff;
     animation: typing 2s steps(15), cursor .6s step-end infinite alternate;
 }
 
@@ -300,11 +298,7 @@ html {
     color: white;
     background: #101630;
     padding: 1rem;
-    border: 2px solid #4ab5d1;
-    box-shadow: 0 0 15px #4ab5d1;
-    border-image: linear-gradient(135deg, #3b13a9, #5fb2db) 1;
-    border-width: 2px;
-    border-style: solid;
+    border: 2px solid #536fff;
     transition: 0.5s;
 }
 
@@ -317,8 +311,8 @@ html {
 }
 
 #resume:hover{
-    background: linear-gradient(135deg, #3b13a9, #5fb2db);
-    box-shadow: 0 0 15px #4ab5d1;
+    background: #536fff;
+    box-shadow: 0 0 5px #536fff;
 }
 
 
@@ -336,14 +330,13 @@ html {
 #services_list{
     display: flex;
     justify-content: space-evenly;
-    height:706px;
+    height:470px;
 }
 
 .services_cont {
     padding: 8px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #3b13a9, #5fb2db);
-    box-shadow: 0 0 15px;
+    background: #233266;
     margin: 0 1rem; 
     
  
@@ -364,11 +357,11 @@ html {
 .services_btn {
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    gap: 1rem;
+    text-align: left;
+    gap: 2rem;
     color: white;
-    height: 550px;
-    width: 580px;
+    height: 400px;
+    width: 430px;
     min-width: 250px;
     padding: 3rem;
     background: #101630;
@@ -378,7 +371,7 @@ html {
     display: flex;
 }
 
-.services_expand { /* position: absolute; */
+.services_expand {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -390,48 +383,26 @@ html {
 
 }
 
-.services_img {
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-}
-
-#webdev_img {
-    background-image: url(images/webdev-w.png);
-    height: 100px;
-    width: 150px;
+.services_icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: white;
     margin-right: 2rem;
 }
 
-#webdev_services:hover #webdev_img {
-    background-image: url(images/webdev-r.png);
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-    color: #e60614;
+.services_title{
+    width: 210px;
 }
 
-#mobdev_img {
-    background-image: url(images/mobdev-w.png);
-    background-size: auto;
-    height: 100px;
-        width: 150px;
-        margin-right: 2rem;
+.services_img {
+    height: 50px;
+    width: 50px;
 }
 
-#mobdev_services:hover #mobdev_img {
-    background-image: url(images/mobdev-b.png);
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-    color: #1e1e1e;
-}
-
-
-#webdev_services:active,
-#mobdev_services:active {
-    background: #1e1e1e;
-}
 
 #skills {
     display: flex;
@@ -542,31 +513,66 @@ html {
 
 
 #contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
-    background-color: #101630;
+    background-color: #131B3A;
+    padding: 2rem 10rem;
 }
 
-#contact_display_cont {
+#contacts_container{
     display: flex;
-    justify-content: center;
-    height: 89vh;
+    justify-content: space-between;
     width: 100%;
 }
 
-#contact_display {
+#contacts_info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    color: white;
-    height: 600px;
-    width: 600px;
-    min-width: 300px;
-    padding: 20px;
-    margin: auto 0;
-    background: #1e1e1e;
+    width: 40%;
 }
+
+#contacts_title{
+    color:white;
+    font-weight: bolder;
+}
+
+#contacts_desc{
+    color: white;
+    padding: 6rem 0;
+}
+
+#contacts_links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 410px;
+}
+
+.social_img{
+    width: 50px;
+    height: 50px;
+    color: red;
+}
+
+#contacts_box{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+    width: 50%;
+    background: #233266;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#fb_link{
+    width: 50px;
+    height: 50px;
+}
+
 
 #user_email {
     height: 54px;
@@ -579,7 +585,7 @@ html {
     height: 100%;
     width: 100%;
     padding: 1rem;
-    background: #333333;
+    background: #131939;
 }
 
 #user_subject {
@@ -593,11 +599,11 @@ html {
     height: 100%;
     width: 100%;
     padding: 1rem;
-    background: #333333;
+    background: #131939;
 }
 
 #user_message {
-    height: 300px;
+    height: 200px;
     width: 100%;
     min-width: 250px;
 }
@@ -607,78 +613,26 @@ html {
     height: 100%;
     width: 100%;
     padding: 1rem;
-    background: #333333;
+    background: #131939;
 }
 
 #user_submit {
     text-align: center;
-    color: white;
+    color: #131939;
     height: 57px;
     width: 100%;
     min-width: 250px;
     padding: 1rem;
-    background: linear-gradient(45deg, #9f101b, #e60614);
+    background-color: #233266;
+    border: 3px solid #131939;
 }
 
 #user_submit:hover {
-    color: #1e1e1e;
+    color: white;
+    background: #536fff;
+    border: none;
 }
 
-#user_submit:active {
-    background: #990000;
-}
-
-#contact_footer {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-}
-
-#fb_link {
-    background-image: url(images/fb-w.png);
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-    color: #e60614;
-}
-
-#fb_link:hover {
-    background-image: url(images/fb-r.png);
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-}
-
-#linkedin_link {
-    background-image: url(images/linkedin-w.png);
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-    color: #e60614;
-}
-
-#linkedin_link:hover {
-    background-image: url(images/linkedin-r.png);
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-}
-
-#github_link {
-    background-image: url(images/github-w.png);
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-    color: #e60614;
-}
-
-#github_link:hover {
-    background-image: url(images/github-r.png);
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-}
 
 #created {
     text-align: end;
