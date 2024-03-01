@@ -470,6 +470,13 @@ html {
     padding: 8px;
     border-radius: 8px;
     background: #233266;
+    border: 2px solid #233266;
+}
+
+.experience_skills_container:hover {
+    background: #131B3A;
+    border: 2px solid #233266;
+
 }
 
 .experience_skills_img{
@@ -525,6 +532,10 @@ html {
     border-radius: 25px;
 }
 
+.skills_container:hover {
+    background: #536fff;
+}
+
 .skills_img{
     width:60px;
     height:60px;
@@ -538,41 +549,6 @@ html {
     width: 100%;
     height: 40px;
 }
-
-#experience_
-.technical_skills {
-    height: 500px;
-    width: 372px;
-    background: linear-gradient(135deg, #285193, #25236A);
-    margin: 1rem;
-}
-
-.technical_skills_title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 100px;
-    color: white;
-    border-bottom: 3px solid #1b3764;
-    padding: 1rem;
-}
-
-.technical_skills_list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    padding: 1rem;
-}
-
-.technical_skills_img {
-    height: 100px;
-    width: 100px;
-    margin: 3rem;
-}
-
 
 #projects {
     width: 100%;
@@ -736,7 +712,7 @@ html {
 
 #contacts_desc{
     color: white;
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 #contacts_links {
@@ -764,9 +740,12 @@ html {
     border-radius: 8px;
 }
 
-#fb_link{
-    width: 50px;
-    height: 50px;
+
+#github_img{
+    width: 40px;
+    height: 40px;
+    background-size: 50px 100px;
+    v
 }
 
 .social_img:hover {
