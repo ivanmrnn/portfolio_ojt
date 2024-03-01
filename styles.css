@@ -30,7 +30,7 @@ h3 {
 }
 
 p {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 h4 {
@@ -401,7 +401,7 @@ html {
 }
 
 
-#skills {
+#experience {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -411,10 +411,135 @@ html {
     padding: 2rem 9rem;
 }
 
-#skills_container{
+#experience_list_container{
     display: flex;
 }
 
+#experience_list{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+}
+
+.experience_container{
+    display: flex;
+    width: 100%;
+    height: 220px;
+
+}
+
+.experience_duration {
+    display: flex;
+    color: white;
+    width: 260px;
+    padding-top: 8px;
+}
+
+.experience_content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experience_company {
+    color: #536fff;
+}
+
+.experience_role {
+    color: white;
+}
+
+.experience_description {
+    color: white;
+}
+
+
+.experience_skills_list {
+    display: flex;
+    color: white;
+    gap: 1rem;
+    height: 50px; 
+
+}
+
+.experience_skills_container {
+    display: flex;
+    color: white;
+    height: 50px;
+    padding: 8px;
+    border-radius: 8px;
+    background: #233266;
+}
+
+.experience_skills_img{
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+}
+
+.experience_skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 32px;
+}
+
+
+#skills_list_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+}
+
+#skills_list{
+    display: flex;
+    height: 296px;
+    width:444px;
+}
+.skills_list_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 132px;
+    margin: 8px;
+}
+
+#skills_list_middle{
+    justify-content: center;
+}
+
+.skills_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 132px;
+    height: 132px;
+    padding: 1rem;
+    border: 2px solid #536fff;
+    border-radius: 25px;
+}
+
+.skills_img{
+    width:60px;
+    height:60px;
+}
+
+.skills_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+
+#experience_
 .technical_skills {
     height: 500px;
     width: 372px;
@@ -470,6 +595,7 @@ html {
 
 .tab_cont {
     display: none;
+    width: 100%;
     padding: 3rem 1rem 1rem 1rem;
 }
 
@@ -485,7 +611,7 @@ html {
 .projects_list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
 
 }
 
@@ -497,7 +623,7 @@ html {
 .projects_content_container{
     display: flex;
     flex-direction: column;
-    width: 49%;
+    width: 45%;
 }
 
 .projects_content{
@@ -520,12 +646,13 @@ html {
 
 .projects_description{
     color: white;
+    width: 712px;
 }
 
 .projects_content_skills_container{
     display: flex;
     height: 82px;
-    width: 800px;
+    width: 712px;
 }
 
 .projects_content_skills{
@@ -565,7 +692,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 49%;
+    width: 45%;
     background: #233266;
     height: 500px;
 }
@@ -573,7 +700,7 @@ html {
 .projects_img{
     color: white;
     border: 1px solid white;
-    width: 800px;
+    width: 662px;
     height: 400px;
 
 }
@@ -709,5 +836,5 @@ html {
     transform: rotate(-90deg);
     bottom: 100px;
     left:85px;
-    color:  #2c2a89;
+    color: #7876d5;
 }
